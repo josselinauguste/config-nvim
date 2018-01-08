@@ -25,3 +25,18 @@
 [submodule "bundle/vim-gitgutter"]
 	path = bundle/vim-gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "bundle/vim-fsharp"]
+	path = bundle/vim-fsharp
+	url = https://github.com/fsharp/vim-fsharp.git
+[submodule "bundle/vim-hugo-helper"]
+	path = bundle/vim-hugo-helper
+	url = https://github.com/robertbasic/vim-hugo-helper.git
+[submodule "bundle/vim-vinegar"]
+	path = bundle/vim-vinegar
+	url = git://github.com/tpope/vim-vinegar.git
+[submodule "bundle/tcomment_vim"]
+	path = bundle/tcomment_vim
+	url = https://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/vim-grepper"]
+	path = bundle/vim-grepper
+	url = https://github.com/mhinz/vim-grepper.git
