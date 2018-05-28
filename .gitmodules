@@ -65,6 +65,9 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/floobits-neovim"]
+	path = bundle/floobits-neovim
+	url = https://github.com/Floobits/floobits-neovim.git
 [submodule "bundle/vim-reason-plus"]
 	path = bundle/vim-reason-plus
 	url = https://github.com/reasonml-editor/vim-reason-plus.git
