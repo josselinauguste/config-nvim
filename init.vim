@@ -115,8 +115,12 @@ nnoremap <silent> gd :call LanguageClient_textDocument_definition()<CR>
 nnoremap <silent> gr :call LanguageClient_textDocument_rename()<CR>
 nnoremap <silent> gf :call LanguageClient_textDocument_formatting()<CR>
 
-" Neofomat
-let g:neoformat_enabled_haskell = ['stylish-haskell']
+" Neoformat
+let g:neoformat_run_all_formatters = 1
+let g:neoformat_only_msg_on_error = 1
+let g:neoformat_try_formatprg = 0
+
+let g:neoformat_enabled_haskell = ['stylishhaskell']
 
 " Haskell-vim
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
