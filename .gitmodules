@@ -1,15 +1,6 @@
 [submodule "bundle/dracula-theme"]
 	path = bundle/dracula-theme
 	url = git@github.com:dracula/vim.git
-[submodule "bundle/nvim-completion-manager"]
-	path = bundle/nvim-completion-manager
-	url = https://github.com/roxma/nvim-completion-manager.git
-[submodule "bundle/LanguageClient-neovim"]
-	path = bundle/LanguageClient-neovim
-	url = https://github.com/autozimu/LanguageClient-neovim.git
-[submodule "bundle/vim-reason-plus"]
-	path = bundle/vim-reason-plus
-	url = https://github.com/reasonml-editor/vim-reason-plus.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = https://github.com/tpope/vim-rails.git
@@ -40,3 +31,40 @@
 [submodule "bundle/vim-grepper"]
 	path = bundle/vim-grepper
 	url = https://github.com/mhinz/vim-grepper.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/vim-toml"]
+	path = bundle/vim-toml
+	url = https://github.com/cespare/vim-toml.git
+[submodule "bundle/vim-javascript"]
+	path = bundle/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "haskell-vim"]
+	path = haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule "bundle/kotlin-vim"]
+	path = bundle/kotlin-vim
+	url = https://github.com/udalov/kotlin-vim.git
+[submodule "bundle/LanguageClient-neovim"]
+	path = bundle/LanguageClient-neovim
+	url = https://github.com/autozimu/LanguageClient-neovim.git
+	branch = next
+[submodule "bundle/vim-one"]
+	path = bundle/vim-one
+	url = https://github.com/rakr/vim-one.git
+[submodule "bundle/haskell-vim"]
+	path = bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
+[submodule "bundle/neoformat"]
+	path = bundle/neoformat
+	url = https://github.com/sbdchd/neoformat.git
+[submodule "bundle/ansible-vim"]
+	path = bundle/ansible-vim
+	url = https://github.com/pearofducks/ansible-vim.git
+[submodule "bundle/auto-pairs"]
+	path = bundle/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs.git
+[submodule "bundle/vim-reason-plus"]
+	path = bundle/vim-reason-plus
+	url = https://github.com/reasonml-editor/vim-reason-plus.git
