@@ -129,8 +129,11 @@ augroup fmt
   autocmd BufWritePre * undojoin | Neoformat
 augroup END
 
-" Ale - provides linting
+" Ale - provides linting (neomake like)
 let g:airline#extensions#ale#enabled = 1
+
+nnoremap <buffer> <silent> <LocalLeader>= :ALEFix<CR>
+let g:ale_fix_on_save = 1
 
 " Haskell-vim
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
@@ -141,8 +144,3 @@ let g:haskell_enable_typeroles = 1        " to enable highlighting of type roles
 let g:haskell_enable_static_pointers = 1  " to enable highlighting of `static`
 let g:haskell_backpack = 1                " to enable highlighting of backpack keywords
 
-" Intero
-" Prefer starting Intero manually (faster startup times)
-let g:intero_start_immediately = 0
-" Use ALE (works even when not using Intero)
-let g:intero_use_neomake = 0
