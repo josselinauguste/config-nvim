@@ -50,7 +50,8 @@ highlight Pmenu ctermbg=238 gui=bold
 " Show wrap guide
 set colorcolumn=100
 
-let mapleader = ','
+nnoremap <SPACE> <Nop>
+let mapleader = ' '
 
 set wildignore+=*.bs.js
 set wildignore+=node_modules
