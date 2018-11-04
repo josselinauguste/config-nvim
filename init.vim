@@ -70,6 +70,9 @@ set updatetime=250
 nnoremap <leader>g :Grepper -tool git<cr>
 nnoremap <leader>G :Grepper -tool ag<cr>
 
+" Dash
+nmap <silent> <leader>d <Plug>DashSearch
+
 " Markdown
 let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
@@ -132,6 +135,9 @@ augroup END
 
 " Ale - provides linting (neomake like)
 let g:airline#extensions#ale#enabled = 1
+
+let g:ale_set_loclist = 0 " one per file
+let g:ale_set_quickfix = 1 " one global
 
 nnoremap <buffer> <silent> <LocalLeader>= :ALEFix<CR>
 let g:ale_fix_on_save = 1
