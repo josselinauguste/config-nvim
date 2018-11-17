@@ -70,6 +70,10 @@ set updatetime=250
 nnoremap <leader>g :Grepper -tool git<cr>
 nnoremap <leader>G :Grepper -tool ag<cr>
 
+" FZF
+nnoremap <leader>p :FZF<cr>
+nnoremap <leader>bb :Buffers<cr>
+
 " Dash
 nmap <silent> <leader>d <Plug>DashSearch
 
@@ -88,8 +92,6 @@ nmap <leader>h :bprevious<CR>
 " Close the current buffer and move to the previous one
 " This replicates the idea of closing a tab
 nmap <leader>bq :bp <BAR> bd #<CR>
-" Show all open buffers and their status
-nmap <leader>bl :ls<CR>
 
 " Airline
 let g:airline#extensions#tabline#enabled = 1
