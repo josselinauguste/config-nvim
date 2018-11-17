@@ -99,16 +99,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1 
 let g:airline_theme='one'
 
-" CtrlP
-" Ignore files in .gitignore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-" Open file menu
-nnoremap <Leader>o :CtrlP<CR>
-" Open buffer menu
-nnoremap <Leader>b :CtrlPBuffer<CR>
-" Open most recently used files
-nnoremap <Leader>f :CtrlPMRUFiles<CR>
-
 " Language server
 " Required for operations modifying multiple buffers like rename.
 let g:LanguageClient_serverCommands = {
