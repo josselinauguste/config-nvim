@@ -67,6 +67,8 @@ endif
 set updatetime=250
 
 " FZF
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
 nnoremap <leader>p :FZF<cr>
 nnoremap <leader>bb :Buffers<cr>
 nnoremap <leader>f :Ag<cr>
