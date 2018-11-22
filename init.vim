@@ -66,13 +66,10 @@ endif
 " Reduce refresh time for git-gutter
 set updatetime=250
 
-" Grepper
-nnoremap <leader>g :Grepper -tool git<cr>
-nnoremap <leader>G :Grepper -tool ag<cr>
-
 " FZF
 nnoremap <leader>p :FZF<cr>
 nnoremap <leader>bb :Buffers<cr>
+nnoremap <leader>f :Ag<cr>
 
 " Dash
 nmap <silent> <leader>d <Plug>DashSearch
