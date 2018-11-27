@@ -44,8 +44,10 @@ if (empty($TMUX))
 endif
 
 color one
-set background=light
-highlight Pmenu ctermbg=238 gui=bold 
+if $LIGHT == '1'
+  set background=light
+  highlight Pmenu ctermbg=238 gui=bold 
+endif
 
 " Show wrap guide
 set colorcolumn=100
