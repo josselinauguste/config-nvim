@@ -46,7 +46,8 @@ if (empty($TMUX))
 endif
 
 color one
-if $LIGHT == '1'
+let light_env=$LIGHT
+if light_env == '1'
   set background=light
   highlight Pmenu ctermbg=238 gui=bold 
 endif
