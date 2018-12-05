@@ -50,6 +50,8 @@ let light_env=$LIGHT
 if light_env == '1'
   set background=light
   highlight Pmenu ctermbg=238 gui=bold 
+else
+  set background=dark
 endif
 
 " Show wrap guide
