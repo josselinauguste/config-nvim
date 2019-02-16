@@ -17,9 +17,6 @@
 [submodule "bundle/vim-one"]
 	path = bundle/vim-one
 	url = https://github.com/rakr/vim-one.git
-[submodule "bundle/neoformat"]
-	path = bundle/neoformat
-	url = https://github.com/sbdchd/neoformat.git
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs.git

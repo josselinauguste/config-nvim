@@ -31,7 +31,7 @@ set splitright
 
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
 "If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
-"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more iformation.)
 if (empty($TMUX))
   if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
@@ -121,16 +121,6 @@ nnoremap <silent> gf :call LanguageClient#textDocument_formatting()<CR>
 nnoremap <silent> gu :call LanguageClient#textDocument_references()<CR>
 nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
 nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
-
-" Neoformat
-" let g:neoformat_run_all_formatters = 1
-let g:neoformat_only_msg_on_error = 1
-let g:neoformat_try_formatprg = 0
-
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
 
 " Ale - provides linting (neomake like)
 let g:airline#extensions#ale#enabled = 1
