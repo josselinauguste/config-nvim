@@ -45,6 +45,9 @@ if (empty($TMUX))
   endif
 endif
 
+" Clipboard
+set clipboard=unnamedplus
+
 color one
 let light_env=$LIGHT
 if light_env == '1'
@@ -63,6 +66,7 @@ let mapleader = ' '
 set wildignore+=*.bs.js
 set wildignore+=node_modules
 set wildignore+=.git
+set wildignore+=*.pyc
 
 " vimdiff
 set diffopt+=iwhite
