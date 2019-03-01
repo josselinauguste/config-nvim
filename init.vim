@@ -118,13 +118,14 @@ let g:LanguageClient_serverCommands = {
     \ 'python': ['pyls'],
     \ }
 
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> gr :call LanguageClient#textDocument_rename()<CR>
-nnoremap <silent> gf :call LanguageClient#textDocument_formatting()<CR>
-nnoremap <silent> gu :call LanguageClient#textDocument_references()<CR>
-nnoremap <silent> ga :call LanguageClient#textDocument_codeAction()<CR>
-nnoremap <silent> gs :call LanguageClient#textDocument_documentSymbol()<CR>
+nnoremap <F5> :call LanguageClient_contextMenu()<CR>
+map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
+map <Leader>lg :call LanguageClient#textDocument_definition()<CR>
+map <Leader>lr :call LanguageClient#textDocument_rename()<CR>
+map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
+map <Leader>lb :call LanguageClient#textDocument_references()<CR>
+map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
+map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 
 " Ale - provides linting (neomake like)
 let g:airline#extensions#ale#enabled = 1
