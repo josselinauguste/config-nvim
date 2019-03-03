@@ -41,20 +41,21 @@ if (empty($TMUX))
   "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
   " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
   if (has("termguicolors"))
-    set termguicolors
+  set termguicolors
   endif
 endif
 
 " Clipboard
 set clipboard=unnamedplus
 
-color one
 let light_env=$LIGHT
 if light_env == '1'
   set background=light
+  color one
   highlight Pmenu ctermbg=238 gui=bold 
 else
   set background=dark
+  colorscheme solarized8_high
 endif
 
 " Show wrap guide
@@ -107,8 +108,11 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 let g:airline#extensions#tabline#enabled = 1
 " Disable powerline fonts.
 let g:airline_powerline_fonts = 1 
-let g:airline_theme='one'
-
+if light_env == '1'
+  let g:airline_theme='one'
+else
+  let g:airline_theme='solarized'
+endif
 " Language server
 " Required for operations modifying multiple buffers like rename.
 let g:LanguageClient_serverCommands = {
