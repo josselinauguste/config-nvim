@@ -93,19 +93,9 @@ let g:vim_markdown_toml_frontmatter = 1
 let g:vim_markdown_folding_disabled = 1
 
 " Buffers
-" To open a new empty buffer
-" This replaces :tabnew which I used to bind to this mapping
-nmap <leader>T :enew<cr>
-" Move to the next buffer
-nmap <leader>l :bnext<CR>
-" Move to the previous buffer
-nmap <leader>h :bprevious<CR>
-" Close the current buffer and move to the previous one
-" This replicates the idea of closing a tab
-nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Airline
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 " Disable powerline fonts.
 let g:airline_powerline_fonts = 1 
 if light_env == '1'
@@ -113,6 +103,7 @@ if light_env == '1'
 else
   let g:airline_theme='solarized'
 endif
+
 " Language server
 " Required for operations modifying multiple buffers like rename.
 let g:LanguageClient_serverCommands = {
