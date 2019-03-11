@@ -121,6 +121,7 @@ map <Leader>lf :call LanguageClient#textDocument_formatting()<CR>
 map <Leader>lb :call LanguageClient#textDocument_references()<CR>
 map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
 map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
+map <Leader>le :call LanguageClient#explainErrorAtPoint()<CR>
 
 " let g:LanguageClient_loggingFile = expand("~/.local/share/nvim/LanguageClient.log")
 " let g:LanguageClient_loggingLevel = 'DEBUG'
@@ -133,11 +134,6 @@ let g:ale_set_quickfix = 1 " one global
 
 nnoremap <buffer> <silent> <LocalLeader>= :ALEFix<CR>
 let g:ale_fix_on_save = 1
-
-hi link ALEError Error
-hi Warning term=underline cterm=underline ctermfg=Yellow gui=undercurl guisp=Gold
-hi link ALEWarning Warning
-hi link ALEInfo SpellCap
 
 " Haskell-vim
 let g:haskell_enable_quantification = 1   " to enable highlighting of `forall`
