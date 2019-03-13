@@ -82,7 +82,7 @@ set updatetime=250
 let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 nnoremap <leader>p :FZF<cr>
-nnoremap <leader>bb :Buffers<cr>
+nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>f :Ag<cr>
 
 " Dash
