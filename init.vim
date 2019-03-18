@@ -52,7 +52,7 @@ let light_env=$LIGHT
 if light_env == '1'
   set background=light
   color one
-  highlight Pmenu ctermbg=238 gui=bold 
+  highlight Pmenu ctermbg=238 gui=bold
 else
   set background=dark
   colorscheme solarized8_high
@@ -97,7 +97,7 @@ let g:vim_markdown_folding_disabled = 1
 " Airline
 " let g:airline#extensions#tabline#enabled = 1
 " Disable powerline fonts.
-let g:airline_powerline_fonts = 1 
+let g:airline_powerline_fonts = 1
 if light_env == '1'
   let g:airline_theme='one'
 else
