@@ -104,6 +104,9 @@ else
   let g:airline_theme='solarized'
 endif
 
+" Deoplete
+let g:deoplete#enable_at_startup = 1
+
 " Language server
 " Required for operations modifying multiple buffers like rename.
 let g:LanguageClient_serverCommands = {
