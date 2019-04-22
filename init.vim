@@ -55,7 +55,7 @@ if light_env == '1'
   highlight Pmenu ctermbg=238 gui=bold
 else
   set background=dark
-  colorscheme solarized8_high
+  colorscheme solarized8
 endif
 
 " Show wrap guide
