@@ -111,6 +111,7 @@ let g:LanguageClient_serverCommands = {
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ 'haskell': ['hie-wrapper'],
     \ 'python': ['pyls'],
+    \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
