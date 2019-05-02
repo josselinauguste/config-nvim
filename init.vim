@@ -113,7 +113,7 @@ let g:LanguageClient_serverCommands = {
     \ 'reason': ['ocaml-language-server', '--stdio'],
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ 'haskell': ['hie-wrapper'],
-    \ 'python': ['pyls'],
+    \ 'python': ['python -m pyls'],
     \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ }
 
