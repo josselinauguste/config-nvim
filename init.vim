@@ -69,6 +69,10 @@ set wildignore+=node_modules
 set wildignore+=.git
 set wildignore+=*.pyc
 
+" comments
+
+call tcomment#type#Define('fsharp', '// %s')
+
 " vimdiff
 set diffopt+=iwhite
 if &diff
