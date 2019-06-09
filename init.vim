@@ -68,6 +68,7 @@ set wildignore+=*.bs.js
 set wildignore+=node_modules
 set wildignore+=.git
 set wildignore+=*.pyc
+set wildignore+=.DS_Store
 
 " comments
 
