@@ -123,7 +123,8 @@ let g:LanguageClient_serverCommands = {
     \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ 'html': ['nvm exec html-languageserver', '--stdio'],
     \ 'css': ['nvm exec css-languageserver', '--stdio'],
-    \ 'json': ['nvm exec json-languageserver', '--stdio']
+    \ 'json': ['nvm exec json-languageserver', '--stdio'],
+    \ 'go': ['gopls'],
     \ }
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
