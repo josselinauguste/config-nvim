@@ -120,12 +120,13 @@ let g:LanguageClient_serverCommands = {
     \ 'ocaml': ['ocaml-language-server', '--stdio'],
     \ 'haskell': ['hie-wrapper'],
     \ 'python': ['python -m pyls'],
-    \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ 'html': ['nvm exec html-languageserver', '--stdio'],
     \ 'css': ['nvm exec css-languageserver', '--stdio'],
     \ 'json': ['nvm exec json-languageserver', '--stdio'],
     \ 'go': ['gopls'],
+    \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ }
+    " \ 'fsharp': ['dotnet', '/Users/josselin/Code/FsAutoComplete/bin/release_netcore/fsautocomplete.dll', '--mode', 'lsp', '--verbose'],
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
