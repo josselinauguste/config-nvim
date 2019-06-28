@@ -88,7 +88,7 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 nnoremap <leader>p :FZF<cr>
 nnoremap <leader>b :Buffers<cr>
-nnoremap <leader>f :Ag<cr>
+nnoremap <leader>f :Rg<cr>
 
 " Dash
 nmap <silent> <leader>d <Plug>DashSearch
