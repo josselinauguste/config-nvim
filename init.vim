@@ -117,8 +117,8 @@ let g:deoplete#enable_at_startup = 1
 " Required for operations modifying multiple buffers like rename.
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['~/.cargo/bin/rustup', 'run', 'stable', 'rls'],
-    \ 'reason': ['ocaml-language-server', '--stdio'],
-    \ 'ocaml': ['ocaml-language-server', '--stdio'],
+    \ 'reason': ['reason-language-server'],
+    \ 'ocaml': ['reason-language-server'],
     \ 'haskell': ['hie-wrapper'],
     \ 'python': ['python -m pyls'],
     \ 'html': ['nvm exec html-languageserver', '--stdio'],
