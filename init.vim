@@ -128,6 +128,7 @@ let g:LanguageClient_serverCommands = {
     \ 'fsharp': ['dotnet', '~/Code/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll'],
     \ }
     " \ 'fsharp': ['dotnet', '/Users/josselin/Code/FsAutoComplete/bin/release_netcore/fsautocomplete.dll', '--mode', 'lsp', '--verbose'],
+    " \ 'reason': ['ocaml-language-server', '--stdio'], # Use reason-language-server instead
 
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 map <Leader>lk :call LanguageClient#textDocument_hover()<CR>
@@ -139,8 +140,9 @@ map <Leader>la :call LanguageClient#textDocument_codeAction()<CR>
 map <Leader>ls :call LanguageClient#textDocument_documentSymbol()<CR>
 map <Leader>le :call LanguageClient#explainErrorAtPoint()<CR>
 
-" let g:LanguageClient_loggingFile = expand("~/.local/share/nvim/LanguageClient.log")
-" let g:LanguageClient_loggingLevel = 'DEBUG'
+let g:LanguageClient_loggingLevel = 'DEBUG'
+let g:LanguageClient_loggingFile  = expand('~/.local/share/nvim/LanguageClient.log')
+let g:LanguageClient_serverStderr = expand('~/.local/share/nvim/LanguageServer.log')
 
 " Ale - provides linting (neomake like)
 let g:airline#extensions#ale#enabled = 1
