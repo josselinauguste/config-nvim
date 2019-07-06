@@ -69,6 +69,7 @@ set wildignore+=node_modules
 set wildignore+=.git
 set wildignore+=*.pyc
 set wildignore+=.DS_Store
+set wildignore+=.merlin
 
 " comments
 
