@@ -71,6 +71,3 @@
 [submodule "bundle/markdown-preview"]
 	path = bundle/markdown-preview
 	url = https://github.com/iamcco/markdown-preview.nvim.git
-[submodule "bundle/aw-watcher-vim"]
-	path = bundle/aw-watcher-vim
-	url = https://github.com/ActivityWatch/aw-watcher-vim.git
