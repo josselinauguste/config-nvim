@@ -102,7 +102,7 @@ let g:vim_markdown_folding_disabled = 1
 " Buffers
 
 " Airline
-" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 " Disable powerline fonts.
 let g:airline_powerline_fonts = 1
 if light_env == '1'
